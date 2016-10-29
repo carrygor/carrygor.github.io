@@ -1,0 +1,77 @@
+.ZoomIn{
+    -webkit-animation-name:zoomIn;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .3s;
+    -webkit-animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.ZoomInUp{
+    -webkit-animation-name:zoomInUp;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .3s;
+}
+
+@-webkit-keyframes zoomInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.1) translateY(2000px);
+        transform: scale(.1) translateY(2000px);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale(.475) translateY(-60px);
+        transform: scale(.475) translateY(-60px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+.fadeInUp{
+    -webkit-animation-name:fadeInUp;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .3s;
+}
+
+@-webkit-keyframes fadeInUp {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+    }
+    100%{
+        opacity:1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+.fadeInDown{
+    -webkit-animation-name:fadeInDown;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .3s;
+}
+
+@-webkit-keyframes fadeInDown {
+    0%{
+      opacity: 0;
+      -webkit-transform: translateY(-20px);
+    }
+    100%{
+      opacity:1;
+      -webkit-transform: translateY(0);
+    }
+}
