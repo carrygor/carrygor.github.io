@@ -67,4 +67,5 @@ function getScrollTop(){//获取窗口滚动高度
 
 function hi(){
     alert("hello");
+    alert("hello");
 }
