@@ -15,18 +15,32 @@ function SpyScroll() {//监听屏幕滚动
     //console.log(secHeightArr);
     if(scrollTop-secHeightArr[5]>0-windowHeight/4){
         setActive(6);
+        setAnimate("footer_wrapper");
     }else if(scrollTop-secHeightArr[4]>0-windowHeight/4){
         setActive(5);
+        setAnimate("team");
     }else if(scrollTop-secHeightArr[3]>0-windowHeight/4){
         setActive(4);
+        setAnimate("clients");
     }else if(scrollTop-secHeightArr[2]>0-windowHeight/4){
         setActive(3);
+        setAnimate("Portfolio");
     }else if(scrollTop-secHeightArr[1]>0-windowHeight/4){
         setActive(2);
+        setAnimate("aboutUs");
     }else if(scrollTop-secHeightArr[0]>0-windowHeight/4){
         setActive(1);
-    }else setActive(0);
+        setAnimate("services");
+    }else {
+        setActive(0);
+        setAnimate("hero_section");
+    }
 
+}
+
+function setAnimate(id) {
+
+    $("#"+id).find(".animate").css("-webkit-animation-play-state","running");
 }
 
  function setActive(num) {

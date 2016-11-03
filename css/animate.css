@@ -1,3 +1,7 @@
+.animate{
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
 .ZoomIn{
     -webkit-animation-name:zoomIn;
     -webkit-animation-duration: 1s;
@@ -73,5 +77,23 @@
     100%{
       opacity:1;
       -webkit-transform: translateY(0);
+    }
+}
+.fadeInLeft{
+    -webkit-animation-name:fadeInLeft;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .3s;
+}
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
     }
 }
